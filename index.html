@@ -165,70 +165,134 @@
          HERO SECTION
     =========================================== -->
 
-    <section
-        class="hero"
-        id="content"
-    >
+   <section
+    class="hero"
+    id="content"
+>
 
-        <div class="container">
+    <div class="container">
 
+        <div class="row align-items-center g-5">
 
-            <div class="row align-items-center g-5">
+            <!-- คอลัมน์ซ้าย -->
+            <div
+                class="col-sm-12 col-md-5 col-lg-5 col-xl-5"
+            >
 
-
-                <!-- ==================================
-                     คอลัมน์ซ้าย
-                     col-sm-12
-                     col-md-5
-                     col-lg-5
-                     col-xl-5
-                =================================== -->
-
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5"
+                <img
+                    src="images/book-windbreaker.png"
+                    alt="หนังสือ WIND BREAKER"
+                    class="book-cover"
                 >
 
-                    <img
-                        src="images/book-windbreaker.png"
-                        alt="หนังสือ WIND BREAKER"
-                        class="book-cover"
-                    >
+            </div>
 
-                </div>
+            <!-- คอลัมน์ขวา -->
+            <div
+                class="col-sm-12 col-md-7 col-lg-7 col-xl-7"
+            >
 
-
-                <!-- ==================================
-                     คอลัมน์ขวา
-                     col-sm-12
-                     col-md-7
-                     col-lg-7
-                     col-xl-7
-                =================================== -->
-
-                <div
-                    class="col-sm-12 col-md-7 col-lg-7 col-xl-7"
-                >
-
-                    <p class="hero-text mb-0">
-
-                        ข้อมูลลับตัวละครที่คุณคาดไม่ถึงในออฟฟิเชียลคาแร็กเตอร์บุ๊กเล่มแรก
-
-                    </p>
-
-                </div>
-
+                <p class="hero-text mb-0">
+                    ข้อมูลลับตัวละครที่คุณคาดไม่ถึงในออฟฟิเชียลคาแร็กเตอร์บุ๊กเล่มแรก
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+    <!-- เพิ่มภาพตัวละครตรงนี้ โดยไม่แก้โค้ดเดิม -->
+    <img
+        src="images/wb8 (2).png"
+        alt="ตัวละคร WIND BREAKER"
+        class="hero-character"
+    >
+
+</section>
 
 
 
     <!-- ==========================================
          SECTION 1 : คำโปรย / เรื่องย่อ
     =========================================== -->
+<section class="py-4" style="background-color: #dedecf;">
+
+  <div class="accordion" id="faqAccordion">
+
+    <!-- FAQ 1 -->
+    <div class="accordion-item"
+         style="background-color: solid #8fe17e;">
+
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+          style="background-color: #dedecf; color: #ffffff;"
+        >
+          Q: การ์ตูนเรื่องนี้มีอนิเมชั่นไหม?
+        </button>
+      </h2>
+
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body"
+             style="background-color: #8fe17e; color: #070707;">
+
+          <strong style="color: #a71313;">A:</strong>
+          ตอนนี้มี 2 ซีซั่น สามารถรับชมได้ทางแอปพลิเคชั่นต่าง ๆ เช่น Netflix Bilibli
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FAQ 2 -->
+    <div class="accordion-item"
+         style="background-color: solid #8fe17e;">
+
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+          style="background-color: #dedecf; color: #ffffff;"
+        >
+          Q: หนังสือการ์ตูนมีทั้งหมดกี่เล่ม?
+        </button>
+      </h2>
+
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body"
+             style="background-color: #8fe17e; color: #000000;">
+
+          <strong style="color: #a71313;">A:</strong>
+          การ์ตูนเรื่องนี้ยังเขียนไม่จบ ปัจจุบันของแปลไทย มีถึงเล่ม 25 สามารถสั่งซื้อได้ทางสำนักพิมพ์ PHOENIX
+          และ ร้านหนังสือชั้นนำทั่วไป
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
     <section class="summary-section">
 
@@ -271,119 +335,41 @@
         </div>
 
     </section>
-<section class="py-4" style="background-color: #dedecf;">
 
-  <div class="accordion" id="faqAccordion">
-
-    <!-- FAQ 1 -->
-    <div class="accordion-item"
-         style="background-color: solid #8fe17e;">
-
-      <h2 class="accordion-header" id="headingOne">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseOne"
-          aria-expanded="true"
-          aria-controls="collapseOne"
-          style="background-color: #dedecf; color: #ffffff;"
-        >
-          Q: การ์ตูนเรื่องนี้มีอนิเมชั่นไหม?
-        </button>
-      </h2>
-
-      <div
-        id="collapseOne"
-        class="accordion-collapse collapse show"
-        aria-labelledby="headingOne"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body"
-             style="background-color: #8fe17e; color: #070707;">
-
-          <strong style="color: #a71313;">A:</strong>
-          ขณะนี้มี 2 ซีซั่น สามารถรับชมได้ทางแอปพลิเคชั่นต่าง ๆ เช่น Netflix Bilibli
-
-        </div>
-      </div>
-    </div>
-
-
-    <!-- FAQ 2 -->
-    <div class="accordion-item"
-         style="background-color: solid #8fe17e;">
-
-      <h2 class="accordion-header" id="headingTwo">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo"
-          aria-expanded="false"
-          aria-controls="collapseTwo"
-          style="background-color: #dedecf; color: #ffffff;"
-        >
-          Q: หนังสือการ์ตูนมีทั้งหมดกี่เล่ม?
-        </button>
-      </h2>
-
-      <div
-        id="collapseTwo"
-        class="accordion-collapse collapse"
-        aria-labelledby="headingTwo"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body"
-             style="background-color: #8fe17e; color: #000000;">
-
-          <strong style="color: #a71313;">A:</strong>
-          การ์ตูนเรื่องนี้ยังเขียนไม่จบ ปัจจุบัน ณ เดือนตุลาคม 2569
-          ของแปลไทย มีถึงเล่ม 25 สามารถสั่งซื้อได้ทางสำนักพิมพ์ PHOENIX
-          และ ร้านหนังสือชั้นนำทั่วไป
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
     <!-- ==========================================
          SECTION 2 : หนังสือเล่มนี้ให้อะไรกับเรา?
     =========================================== -->
 
-    <section
-        class="benefit-section"
-        id="benefit"
-    >
+    <section class="benefit-section" id="benefit">
 
-        <div class="container">
+    <div class="container">
 
+        <div class="reveal">
 
-            <div class="reveal">
+            <!-- เพิ่มภาพตัวละคร -->
+            <img
+                src="images/wb9.png"
+                alt="ตัวละคร WIND BREAKER"
+                class="benefit-character"
+            >
 
+            <!-- หัวข้อเดิม -->
+            <h2 class="benefit-title">
+                หนังสือเล่มนี้ ให้อะไรกับเรา?
+            </h2>
 
-                <h2 class="benefit-title">
-
-                    หนังสือเล่มนี้ ให้อะไรกับเรา?
-
-                </h2>
-
-
-                <p class="benefit-text">
-
-                    แง่คิดการเติบโตของชีวิต เพราะทุกตัวละครมีความคิดเป็นของตัวเองว่าจะดำเนินชีวิตต่อไปเป็นคนแบบไหน ใช้กำลังต่อยตีไปเพื่ออะไร การใช้คำพูดกับผู้อื่นแบบนั้นเพราะอะไร ทำให้เราได้เห็นว่าสุดท้ายมนุษย์ทุกคนก็มีด้านที่ทั้งดีและไม่ดี ขึ้นอยู่กับตัวเราว่ายอมรับข้อเสียแบบไหน ซึ่งทุกตัวละครมีพัฒนาการทั้งดีและไม่ดี ทุกคนไม่ได้เกิดมาขาวสะอาด ปัญหาในชีวิตของตัวละครบางตัวอาจเหมือนกับผู้อ่านบางคนในชีวิตจริง ทำให้ผู้อ่านวัยผู้ใหญ่รู้สึกได้ปลอบประโลมตัวเองในวัยเยาว์ ในเล่มคาแร็กเตอร์บุ๊กจะทำให้เข้าใจนิสัยตัวละครมากขึ้น และได้อ่านบทสัมภาษณ์อาจารย์นิอิในการทำการ์ตูน WIND BREAKER
-
-                </p>
-
-
-            </div>
+            <!-- ย่อหน้าเดิมของคุณ ให้วางต่อจากตรงนี้ -->
+            <p class="benefit-text">
+                แง่คิดการเติบโตของชีวิต เพราะทุกตัวละครมีความคิดเป็นของตัวเองว่าจะดำเนินชีวิตต่อไปเป็นคนแบบไหน ใช้กำลังต่อยตีไปเพื่ออะไร การใช้คำพูดกับผู้อื่นแบบนั้นเพราะอะไร ทำให้เราได้เห็นว่าสุดท้ายมนุษย์ทุกคนก็มีด้านที่ทั้งดีและไม่ดี ขึ้นอยู่กับตัวเราว่ายอมรับข้อเสียแบบไหน ซึ่งทุกตัวละครมีพัฒนาการทั้งดีและไม่ดี ทุกคนไม่ได้เกิดมาขาวสะอาด ปัญหาในชีวิตของตัวละครบางตัวอาจเหมือนกับผู้อ่านบางคนในชีวิตจริง ทำให้ผู้อ่านวัยผู้ใหญ่รู้สึกได้ปลอบประโลมตัวเองในวัยเยาว์ ในเล่มคาแร็กเตอร์บุ๊กจะทำให้เข้าใจนิสัยตัวละครมากขึ้น และได้อ่านบทสัมภาษณ์อาจารย์นิอิในการทำการ์ตูน WIND BREAKER
+            </p>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 

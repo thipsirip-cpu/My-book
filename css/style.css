@@ -18,7 +18,106 @@
             background-color: #dedecf;
 
         }
+        /* ==========================================
+   ตัวละครมุมขวาล่างของ HERO
+========================================== */
 
+.hero {
+    position: relative;
+}
+
+.hero-character {
+    position: absolute;
+
+    right: 25px;
+    bottom: 0;
+
+    width: 145px;
+    max-width: 15vw;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    /* Animation ตอนเปิดเว็บ */
+    animation: characterEnter 0.8s 0.5s ease-out both;
+}
+
+
+/* Animation ตัวละครค่อย ๆ ปรากฏ */
+
+@keyframes characterEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* รองรับหน้าจอมือถือ */
+
+@media (max-width: 767.98px) {
+
+    .hero-character {
+        width: 85px;
+        max-width: 22vw;
+
+        right: 8px;
+        bottom: 5px;
+    }
+
+}
+
+/* ==========================================
+   ตัวละครตกแต่ง Section 2
+========================================== */
+
+.benefit-section .reveal {
+    position: relative;
+}
+
+.benefit-character {
+    position: absolute;
+
+    /* ตำแหน่งด้านซ้ายของหัวข้อ */
+    left: 13%;
+    top: -110px;
+
+    width: 150px;
+    max-width: 16vw;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ปรับสำหรับแท็บเล็ตและมือถือ */
+@media (max-width: 767.98px) {
+    .benefit-character {
+        position: relative;
+
+        display: block;
+
+        top: auto;
+        left: auto;
+
+        width: 90px;
+        max-width: 25vw;
+        height: auto;
+
+        margin: -15px auto 15px;
+    }
+}
 
         /* ==========================================
            HEADER
